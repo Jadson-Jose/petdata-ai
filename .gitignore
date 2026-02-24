@@ -1,56 +1,32 @@
-# =========================
 # Python
-# =========================
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.so
-*.egg-info/
-dist/
-build/
 
-# =========================
-# Virtual Environment
-# =========================
+# Virtualenv
 .venv/
 venv/
 env/
-ENV/
 
-# =========================
 # Django
-# =========================
 *.log
-local_settings.py
 db.sqlite3
 media/
 staticfiles/
 
-# =========================
 # Pytest
-# =========================
 .pytest_cache/
 .coverage
-htmlcov/
 
-# =========================
-# VS Code / IDEs
-# =========================
+# VSCode / IDEs
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# =========================
-# Jupyter / Data Science
-# =========================
-.ipynb_checkpoints/
-data/raw/
-data/processed/
-
-# =========================
 # OS
-# =========================
 .DS_Store
 Thumbs.db
+
+# Environment variables
+.env
+.env.*

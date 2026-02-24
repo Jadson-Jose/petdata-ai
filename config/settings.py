@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "apps.shelters.apps.SheltersConfig",
     "apps.pets.apps.PetsConfig",
     "apps.adopters.apps.AdoptersConfig",
+    "apps.adoptions",
 ]
 
 MIDDLEWARE = [

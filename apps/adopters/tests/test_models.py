@@ -13,6 +13,6 @@ def test_create_adopter():
         state="SP",
     )
 
-    assert adopter.id is not None
+    assert adopter.id is not None  # type: ignore
     assert adopter.is_active is True
     assert adopter.city == "São Paulo"
