@@ -11,10 +11,10 @@ def test_create_shelter():
         state="SP",
         email="contato@abrigo.com",
         phone="19999999999",
-        capacity=120,
+        capacity=50,
     )
 
     assert shelter.id is not None  # type: ignore
     assert shelter.name == "Abrigo Esperança"
     assert shelter.city == "Campinas"
-    assert shelter.capacity == 120
+    assert shelter.capacity == 50

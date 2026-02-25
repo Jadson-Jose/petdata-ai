@@ -17,6 +17,10 @@ class Pet(models.Model):
         MALE = "MALE", "Male"
         FEMALE = "FEMALE", "Female"
 
+    class Status(models.TextChoices):
+        AVAILABLE = "AVAILABLE", "Available"
+        ADOPTED = "ADOPTED", "Adopted"
+
     name = models.CharField(max_length=100)
 
     species = models.CharField(
@@ -34,6 +38,12 @@ class Pet(models.Model):
     gender = models.CharField(
         max_length=10,
         choices=Gender.choices,
+    )
+
+    status = models.CharField(
+        max_length=20,
+        choices=Status.choices,
+        default=Status.AVAILABLE,
     )
 
     is_adopted = models.BooleanField(default=True)

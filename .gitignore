@@ -6,27 +6,25 @@ __pycache__/
 
 # Virtualenv
 .venv/
-venv/
 env/
+venv/
 
 # Django
 *.log
+local_settings.py
 db.sqlite3
-media/
-staticfiles/
 
 # Pytest
 .pytest_cache/
 .coverage
+htmlcov/
 
-# VSCode / IDEs
+# Migrations cache
+**/__pycache__/
+
+# VSCode / IDE
 .vscode/
 .idea/
 
 # OS
 .DS_Store
-Thumbs.db
-
-# Environment variables
-.env
-.env.*
